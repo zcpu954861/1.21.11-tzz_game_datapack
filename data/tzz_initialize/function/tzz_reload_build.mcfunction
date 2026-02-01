@@ -1,10 +1,5 @@
 #重置场上建筑物
-setblock -377 71 2182 minecraft:redstone_block
-setblock -377 71 2182 minecraft:diamond_block
-setblock -376 80 2181 minecraft:structure_void
-fill -373 82 2165 -379 80 2165 air
-fill -373 82 2170 -379 80 2170 air
-fill -379 82 2169 -379 80 2166 air
-fill -373 82 2169 -373 80 2166 air
-setblock -448 49 2008 minecraft:redstone_block
-setblock -448 49 2008 minecraft:diamond_block
+function tzz_game:tzz_config/gamestart/reset_catcherbox_main_power
+function tzz_game:tzz_config/gamestart/stop_button_remove
+function tzz_game:tzz_config/gamestart/arena_fill_air
+function tzz_game:tzz_config/task_one/reload_trigger_blocks

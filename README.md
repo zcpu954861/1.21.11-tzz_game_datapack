@@ -10,7 +10,21 @@
 
 - `pack.mcmeta`：`pack_format = 94`
 - 该数据包依赖较新的指令/组件体系（如战利品表里使用 `set_components`、小游戏中使用 `random value`、计分板 `sidebar.team.*` 显示等）。
-- 数据包内存在大量**硬编码坐标**，因此通常需要配套同一张地图/同一坐标系使用。
+- 绝对坐标已改为“宏函数 + 配置函数”集中管理：逻辑函数不再直接写坐标，换地图时只需要调整配置文件中的坐标值。
+
+---
+
+## 坐标配置（宏函数）
+
+本数据包把原先散落在各处的 `tp / setblock / fill / particle` 绝对坐标，统一迁移到配置函数中：
+
+- 宏模板函数：data/tzz_game/function/tzz_macros/
+	- `tp.mcfunction` / `setblock.mcfunction` / `fill.mcfunction` / `particle.mcfunction`
+- 坐标配置区：data/tzz_game/function/tzz_config/
+	- `task_one/`：任务一相关坐标
+	- `gamestart/`：开局小游戏/猎人箱相关坐标
+
+你只需要改 `tzz_config` 目录下对应文件里 `function ... {x:...,y:...,z:...}` 的数值即可完成坐标迁移。
 
 ---
 
@@ -53,7 +67,7 @@
 - `tzz_initialize:tzz_create_team`：创建 3 个队伍（逃走者/猎人/管理员）
 - `tzz_initialize:tzz_gamerule`：设置基础 gamerule（锁时间/天气等）
 - `tzz_initialize:tzz_scheduled_task`：设置定时任务（欢迎与每分钟广播）
-- `tzz_initialize:tzz_reload_build`：重置部分地图建筑（硬编码坐标）
+- `tzz_initialize:tzz_reload_build`：重置部分地图建筑（坐标来自 `tzz_game:tzz_config/...`）
 - `tzz_game_running:op_timer/init`：初始化 OP actionbar 计时器存储
 
 ### tick（每 tick 执行）

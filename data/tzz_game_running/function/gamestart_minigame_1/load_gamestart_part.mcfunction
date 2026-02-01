@@ -1,9 +1,6 @@
-setblock -376 80 2181 minecraft:stone_button[face=floor,facing=south]
-fill -373 82 2165 -379 80 2165 glass
-fill -373 82 2170 -379 80 2170 glass
-fill -379 82 2169 -379 80 2166 glass
-fill -373 82 2169 -373 80 2166 glass
-tp @a[team=tzz_team_runner] -375.50 79.06 2168.00
+function tzz_game:tzz_config/gamestart/stop_button_place
+function tzz_game:tzz_config/gamestart/arena_fill_glass
+function tzz_game:tzz_config/gamestart/tp_all_runners_start
 tag @r[team=tzz_team_runner] add tzz_minigame_1_runner_1
 tag @r[team=tzz_team_runner,tag=!tzz_minigame_1_runner_1] add tzz_minigame_1_runner_2
 
@@ -19,7 +16,7 @@ tellraw @a [{"text":"            - ","color":"yellow"},\
 tellraw @a [{"text":"            - ","color":"yellow"},\
 {"selector":"@a[tag=tzz_minigame_1_runner_2]","color":"aqua"}]
 
-tp @a[tag=tzz_minigame_1_runner_1] -375.5 79.06 2178.5
+function tzz_game:tzz_config/gamestart/tp_runner_1_front
 
 tellraw @a [{"text":"[起跑游戏]","color":"#26beff"}]
 tellraw @a [{"text":"[读秒]","color":"#ff9900"},\
