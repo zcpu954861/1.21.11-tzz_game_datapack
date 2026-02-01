@@ -9,12 +9,12 @@ scoreboard players add @a tzz_player_number_load 1
 scoreboard players set Global tzz_player_number 0
 
 execute as @a[scores={tzz_player_number_load=1..}] at @s \
-run scoreboard players add Global tzz_player_number 1
+ run scoreboard players add Global tzz_player_number 1
 
 tellraw @a [{"text":"[全员逃走中] ",color:"gold"},\
-{text:"当前玩家数量: ",color:"yellow"},\
-{score:{"objective":"tzz_player_number",name:"Global"},color:"green"}]
- 
+ {text:"当前玩家数量: ",color:"yellow"},\
+ {score:{"objective":"tzz_player_number",name:"Global"},color:"green"}]
+
 playsound entity.villager.yes master @a ~ ~ ~ 1 1 1
 
 function tzz_game:tzz_start_game/tzz_game_start_ready

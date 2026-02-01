@@ -160,3 +160,6 @@ scoreboard players set const_60 tzz_op_timer_math 60
 scoreboard players set min tzz_op_timer_math 0
 scoreboard players set sec tzz_op_timer_math 0
 scoreboard players set tmp tzz_op_timer_math 0
+
+#清除玩家effect
+effect clear @a
