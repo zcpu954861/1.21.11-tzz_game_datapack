@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "description": {"text":"打开了用户面板!","color":"green"},
+        "title": {"text":"用户面板","color":"gold"},
+        "icon": {
+            "id": "command_block"
+        },
+        "announce_to_chat": false,
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "parent": "tzz_game:tzz_welcome",
+    "rewards": {
+        "function": "tzz_game:tzz_advancement/tzz_advancement_sound_1"
+    }
+}

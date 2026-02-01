@@ -1,0 +1,1 @@
+scoreboard players set Global tzz_team_check_done 0

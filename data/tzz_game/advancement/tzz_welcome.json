@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "location"
+        }
+    },
+    "display": {
+        "description": {"text":"欢迎游玩全员逃走中!","color":"green"},
+        "title": {"text":"全员逃走中","color":"gold"},
+        "icon": {
+            "id": "command_block"
+        },
+        "announce_to_chat": false,
+        "background": "block/diamond_block",
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "rewards": {
+        "function": "tzz_game:tzz_advancement/tzz_advancement_sound_1"
+    }
+}

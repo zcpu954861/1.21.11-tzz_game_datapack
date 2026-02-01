@@ -1,0 +1,10 @@
+{
+    "values":[
+        "tzz_initialize:tzz_create_scoreboard",
+        "tzz_initialize:tzz_create_team",
+        "tzz_initialize:tzz_gamerule",
+        "tzz_initialize:tzz_scheduled_task",
+        "tzz_initialize:tzz_reload_build",
+        "tzz_game_running:op_timer/init"
+    ] 
+}

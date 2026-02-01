@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "description": {"text":"欢迎查看游戏的规则与指南!","color":"green"},
+        "title": {"text":"百科全书","color":"gold"},
+        "icon": {
+            "id": "book"
+        },
+        "announce_to_chat": false,
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "parent": "tzz_game:tzz_choose_team",
+    "rewards": {
+        "function": "tzz_game:tzz_advancement/tzz_advancement_sound_1"
+    }
+}

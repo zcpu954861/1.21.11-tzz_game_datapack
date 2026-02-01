@@ -1,0 +1,26 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "description": {"text":"游戏开始,玩的开心!","color":"green"},
+        "title": {"text":"游戏开始","color":"gold"},
+        "icon": {
+            "id": "potion",
+            "components":{
+                "minecraft:potion_contents": {
+                    "custom_effects": [{
+                        "id":"speed"
+                    }]
+                }
+            }
+        },
+        "announce_to_chat": false,
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "parent": "tzz_game:tzz_wait_gamestart"
+}

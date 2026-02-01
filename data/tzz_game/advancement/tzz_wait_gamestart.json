@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "description": {"text":"稍等片刻...","color":"green"},
+        "title": {"text":"即将开始","color":"gold"},
+        "icon": {
+            "id": "diamond_boots"
+        },
+        "announce_to_chat": false,
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "parent": "tzz_game:tzz_energy",
+    "rewards": {
+        "function": "tzz_game:tzz_advancement/tzz_advancement_sound_1"
+    }
+}

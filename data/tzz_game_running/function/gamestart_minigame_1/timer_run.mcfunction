@@ -1,0 +1,3 @@
+scoreboard players add Global tzz_minigame_1_timer 1
+
+schedule function tzz_game_running:gamestart_minigame_1/timer_run 1s

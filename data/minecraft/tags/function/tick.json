@@ -1,0 +1,18 @@
+{
+    "values":[
+        "tzz_main_user_operation_panel:tzz_user_can_always_use",
+        "tzz_main_user_operation_panel:tzz_op_user_operation_panel",
+        "tzz_main_user_operation_panel:tzz_user_operation_panel",
+        "tzz_global_function:tzz_death_spectator",
+        "tzz_global_function:tzz_player_effect",
+        "tzz_game:tzz_start_game/tzz_startgame_confirm",
+        "tzz_game:tzz_start_game/tzz_catcher_choose_spawn",
+        "tzz_game:tzz_start_game/tzz_game_start",
+        "tzz_main_user_operation_panel:tzz_user_text_goto",
+        "tzz_main_user_operation_panel:tzz_game_rule",
+        "tzz_main_user_operation_panel:tzz_game_guide",
+        "tzz_game:tzz_start_game/tzz_game_start_chack_team",
+        "tzz_game:tzz_start_game/tzz_game_start_ready_chack",
+        "tzz_game_running:op_timer/tick"
+    ]
+}

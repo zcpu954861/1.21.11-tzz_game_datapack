@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "tzz":{
+            "trigger": "impossible"
+        }
+    },
+    "display": {
+        "description": {"text":"逃走能量决定游戏胜者!","color":"green"},
+        "title": {"text":"逃走能量","color":"gold"},
+        "icon": {
+            "id": "nether_star"
+        },
+        "announce_to_chat": false,
+        "frame": "goal",
+        "hidden": false,
+        "show_toast": true
+    },
+    "parent": "tzz_game:tzz_welcome",
+    "rewards": {
+        "function": "tzz_game:tzz_advancement/tzz_wait_game_start"
+    }
+}

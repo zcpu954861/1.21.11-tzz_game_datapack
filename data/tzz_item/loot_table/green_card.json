@@ -1,0 +1,40 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "paper",
+                    "functions": [
+                       {
+                        "function": "set_components",
+                        "components": {
+                            "custom_data": {
+                                "custom_item": true,
+                                "id": "tzz_game:green_card"
+                            },
+                            "item_model": "tzz_game:green_card",
+                            "item_name": {
+                                "translate": "绿色封锁卡",
+                                "color": "#008000"
+                            },
+                            "lore": [
+                                {
+                                    "text": "111",
+                                    "color": "#00FF7F",
+                                    "italic": false
+                                }
+                            ]
+                        }
+                       },
+                       {
+                        "function": "set_count",
+                        "count": 64
+                       }
+                    ]
+                }
+            ],
+            "rolls": 1
+        }
+    ]
+}
