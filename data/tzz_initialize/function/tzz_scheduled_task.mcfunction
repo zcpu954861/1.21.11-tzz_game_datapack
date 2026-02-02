@@ -3,6 +3,42 @@
 #移除定时项目
 schedule clear tzz_game:tzz_game_energy/tzz_game_energy
 
+# 额外清理：确保 reload 时取消所有游戏运行中的计划任务，避免重载后继续执行旧任务
+schedule clear tzz_scheduled_tasks:tzz_global_broadcast
+schedule clear tzz_game_running:task_two/test_task_two
+schedule clear tzz_game_running:task_one/test_task_one
+schedule clear tzz_game_running:gamestart_minigame_1/timer_run
+schedule clear tzz_game_running:gamestart_minigame_1/small_timer_run
+schedule clear tzz_game_running:gamestart_minigame_1/minigame_1_test
+schedule clear tzz_game_running:gamestart_minigame_1/start_timer
+schedule clear tzz_game_running:gamestart_minigame_1/catcher_45s
+schedule clear tzz_game_running:gamestart_minigame_1/catcher_open
+schedule clear tzz_game_running:gamestart_minigame_1/stop_timer
+schedule clear tzz_game_running:gamestart_minigame_1/tellraw_and_run
+schedule clear tzz_game_running:gamestart_minigame_1/load_gamestart_part
+schedule clear tzz_game_running:gamestart_catcherbox_spawn/catcherbox_spawn_1
+schedule clear tzz_game_running:gamestart_catcherbox_spawn/catcherbox_spawn_2
+schedule clear tzz_game_running:gamestart_catcherbox_spawn/catcherbox_spawn_3
+
+# 清理开始游戏 10s 倒计时相关的所有子任务
+schedule clear tzz_game:tzz_start_game_10second/0second_start
+schedule clear tzz_game:tzz_start_game_10second/1second
+schedule clear tzz_game:tzz_start_game_10second/2second
+schedule clear tzz_game:tzz_start_game_10second/3second
+schedule clear tzz_game:tzz_start_game_10second/4second
+schedule clear tzz_game:tzz_start_game_10second/5second
+schedule clear tzz_game:tzz_start_game_10second/6second
+schedule clear tzz_game:tzz_start_game_10second/7second
+schedule clear tzz_game:tzz_start_game_10second/8second
+schedule clear tzz_game:tzz_start_game_10second/9second
+
+# 其它可能被计划的函数
+schedule clear tzz_game:tzz_start_game/tzz_team_check_done_reset
+schedule clear tzz_game:tzz_game_energy/tzz_game_energy
+schedule clear tzz_game_running:task_two/start_task_two
+schedule clear tzz_game_running:task_one/task_one_start
+schedule clear tzz_game_running:gamestart_minigame_1/start
+
 #添加定时项目
 schedule function tzz_scheduled_tasks:tzz_global_broadcast 60s
 schedule function tzz_initialize:tzz_initialize_ok 1s
