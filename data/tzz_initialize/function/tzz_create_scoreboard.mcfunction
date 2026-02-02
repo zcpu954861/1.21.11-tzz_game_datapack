@@ -79,6 +79,16 @@ scoreboard players set Global tzz_team_check_done 0
 scoreboard objectives add tzz_game_active dummy
 scoreboard players set Global tzz_game_active 0
 
+# 初始化“出界检测”冷却（避免每tick刷屏/重复tp）
+scoreboard objectives add tzz_boundary_cd dummy
+scoreboard players reset @a tzz_boundary_cd
+
+# 临时坐标记分板（供出界通知向 OP 显示整数坐标，避免小数位过多）
+scoreboard objectives add tzz_tmp_x dummy
+scoreboard objectives add tzz_tmp_z dummy
+scoreboard players reset @a tzz_tmp_x
+scoreboard players reset @a tzz_tmp_z
+
 #初始化统计游戏人数的计分板
 scoreboard objectives add tzz_player_number_load dummy
 scoreboard objectives add tzz_player_number dummy
