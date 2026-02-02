@@ -1,8 +1,9 @@
-# 全员逃走中（tzz_minigame）数据包 v2.3.2
+# 全员逃走中（tzz_minigame）数据包 v2.4
 
 本数据包实现了“全员逃走中”小游戏的主流程：玩家/管理员面板、分队与准备检测、10 秒倒计时、逃走能量、死亡旁观、定时广播、OP ActionBar 计时器，以及开局小游戏与任务模块。
 
 > 重要提醒：作者在加载提示中写明“请在游戏开始前 /reload”。并且在开始游戏确认界面也提示：**游戏开始后重载数据包会导致数据清零、地图重置**。请务必按流程操作。
+> 适配 Minecraft Java Edition 1.21.11
 
 ---
 
@@ -312,6 +313,35 @@
 - `data/tzz_game/structure/`：结构文件
 
 ---
+
+## 定时任务（完整）
+
+本数据包在 `data/tzz_initialize/function/tzz_scheduled_task.mcfunction` 中清理并注册了一系列计划任务，主要包括：
+
+- 清理并避免在 `/reload` 后残留的运行中任务（示例）：
+	- `tzz_game:tzz_game_energy/tzz_game_energy`
+	- `tzz_scheduled_tasks:tzz_global_broadcast`
+	- `tzz_game_running:task_two/test_task_two`
+	- `tzz_game_running:task_one/test_task_one`
+	- 开局小游（`tzz_game_running:gamestart_minigame_1/*`）相关的若干子任务
+	- 开局 10s 倒计时的所有子任务（`tzz_game:tzz_start_game_10second/*`）
+
+- 添加到计划表（示例）：
+	- 每 60s 执行：`tzz_scheduled_tasks:tzz_global_broadcast`
+	- 启动完成后 1s 执行：`tzz_initialize:tzz_initialize_ok`
+
+如果你需要禁用或修改这些计划任务，请编辑 `tzz_scheduled_task.mcfunction` 或对应被计划的函数。
+
+## 其他模块 / 小工具
+
+README 前文列举了主要模块；此外仓库中还有若干辅助模块与宏模板，便于快速移植与扩展：
+
+- 宏/模板：`data/tzz_game/function/tzz_macros/`（`tp.mcfunction`、`setblock.mcfunction`、`fill.mcfunction`、`particle.mcfunction`），用于把重复的坐标/动作抽象为可参数化的调用。
+- 边界/越界检测：`data/tzz_game/function/tzz_boundary/`（`outside.mcfunction`、`tick.mcfunction`），用于场地越界处理与自动传送。
+- 进阶触发器/提示：`data/tzz_game/function/tzz_advancement/`（例如 `tzz_advancement_sound_1.mcfunction`）用于进度相关的额外提示或音效触发。
+- 定时任务集合：`data/tzz_scheduled_tasks/function/`（如 `tzz_global_broadcast.mcfunction`）负责跨模块的周期性广播或维护任务。
+
+备注：仓库中部分函数名保留了历史拼写（例如 `chack` 而非 `check`），README 已按当前文件名描述，若你打算重命名函数文件，请同步更新 `data/minecraft/tags/function/*.json` 中的引用。
 
 ## 常见问题（排错）
 
