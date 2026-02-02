@@ -12,7 +12,7 @@ execute as @a[scores={tzz_game_start_process=1..}] at @s run \
 execute as @a[scores={tzz_game_start_process=1..}] at @s run \
  execute if score Global tzz_unassigned matches 1.. \
  run tellraw @a [{"text":"[全员逃走中] ","color":"gold"},\
- {"text":"有玩家未选择队伍，请全部玩家选择队伍后再开始游戏！","color":"red"}]
+ {"text":"有玩家未选择队伍，请全部玩家选择队伍后再开始游戏！","color":"#ff0000"}]
 
 # 4. 如果所有玩家都已分组，可继续后续流程（此处可加后续检测或流程）
 execute as @a[scores={tzz_game_start_process=1..}] at @s run \
@@ -21,7 +21,9 @@ execute as @a[scores={tzz_game_start_process=1..}] at @s run \
  {"text":"所有玩家已选择队伍，可以开始游戏。","color":"green"}]
 
 execute as @a[scores={tzz_game_start_process=1..}] at @s run \
- function tzz_game:tzz_start_game/tzz_game_start_board_reset
+ execute unless score Global tzz_unassigned matches 1.. \
+ run function tzz_game:tzz_start_game/tzz_game_start_board_reset
+
 
 
 

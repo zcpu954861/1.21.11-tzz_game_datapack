@@ -3,7 +3,15 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @s [{text:"[全员逃走中]",color:"gold"},{text:"你确定要开始游戏吗？",color:"aqua"}]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
- tellraw @s [{text:"=========================",color:"red"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @s [{text:"• ",color:green},{text:"点击确认开始游戏",color:"green",\
@@ -11,7 +19,15 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  hover_event:{action:"show_text",value:{text:"点击确认开始游戏",color:green}}}]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
- tellraw @s [{text:"=========================",color:"red"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @s [{text:"如果你不想开始游戏,请关闭此提示框即可。",color:"yellow"}]
@@ -20,13 +36,13 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  playsound block.note_block.pling master @s ~ ~ ~ 1 1 1
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
- tellraw @s [{text:"注意:一旦游戏开始,将不能随意停止!",color:"red"}]
+ tellraw @s [{text:"注意:一旦游戏开始,将不能随意停止!","color":"#ff0000"}]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
- tellraw @s [{text:"在游戏开始后重载数据包会导致数据完全清零,地图完全重置!",color:"red"}]
+ tellraw @s [{text:"在游戏开始后重载数据包会导致数据完全清零,地图完全重置!","color":"#ff0000"}]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
- tellraw @s [{text:"在检查完毕数据包正常后,您可以开始游戏!",color:"red"}]
+ tellraw @s [{text:"在检查完毕数据包正常后,您可以开始游戏!","color":"#ff0000"}]
 
 #为猎人玩家显示出生位置选择
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
@@ -66,7 +82,15 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @a[team=tzz_team_catcher] \
- [{text:"=========================",color:"red"}]
+ [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @a[team=tzz_team_catcher] \
@@ -130,7 +154,15 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @a[team=tzz_team_catcher] \
- [{text:"=========================",color:"red"}]
+ [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  gamemode spectator @a[team=tzz_team_catcher]

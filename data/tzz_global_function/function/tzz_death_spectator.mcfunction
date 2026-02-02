@@ -13,8 +13,8 @@ execute \
 execute \
  if score switch tzz_death_spectator_switch matches 1 \
  as @a[scores={tzz_death_spectator=1..},tag=!op] \
- run tellraw @a [{"text":"[全员逃走中] ","color":"red"},\
- {"text":""},{"selector":"@s","color":"yellow"},{"text":" 被猎人抓捕!","color":"red"}]
+run tellraw @a [{"text":"[全员逃走中] ","color":"#ff0000"},\
+ {"text":""},{"selector":"@s","color":"yellow"},{"text":" 被猎人抓捕!","color":"#ff0000"}]
 
 #重置并统计剩余玩家数量
 execute \
@@ -33,7 +33,7 @@ execute \
 execute \
  if score switch tzz_death_spectator_switch matches 1 \
  as @a[scores={tzz_death_spectator=1..},tag=!op] \
- run tellraw @a [{"text":"[全员逃走中]剩余玩家数: ","color":"red"},\
+run tellraw @a [{"text":"[全员逃走中]剩余玩家数: ","color":"#ff0000"},\
  {"score":{"name":"Global","objective":"tzz_player_count"},"color":"yellow"}]
 
 #重置tzz_death_spectator记分板分数为0

@@ -8,7 +8,16 @@ execute as @a[scores={tzz_user_operation=1..}] at @s run \
  tellraw @s [{text:"--------=>玩家面板<=--------",color:"#7FFFAA"}]
 
 execute as @a[scores={tzz_user_operation=1..}] at @s run \
- tellraw @s [{text:"========================",color:"aqua"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
+
 
 execute as @a[scores={tzz_user_operation=1..}] at @s run \
  tellraw @s [{text:"• ",color:green},{text:"加入逃走者",color:"#BFFF00",\
@@ -46,7 +55,16 @@ execute as @a[scores={tzz_user_operation=1..}] at @s run \
  hover_event:{"action":"show_text","value":{"text":"点击查看游戏规则与指南","color":green}}}]
 
 execute as @a[scores={tzz_user_operation=1..}] at @s run \
- tellraw @s [{text:"========================",color:"aqua"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
+
 
 
 execute as @a[scores={tzz_user_operation=1..}] at @s run \
@@ -74,7 +92,7 @@ execute as @a[scores={tzz_join_runner=1..}] at @s run \
 
 execute as @a[scores={tzz_join_runner=1..}] if score Global tzz_game_active matches 1 at @s run \
  tellraw @a[tag=op] [{"text":"[全员逃走中]",color:"gold"},\
- {"text":"管理员注意:",color:"red"},\
+ {"text":"管理员注意:","color":"#ff0000"},\
  {"text":"玩家 ","color":"yellow"},\
  {"selector":"@s","color":"aqua"},\
  {"text":"在游戏进程中加入逃走者队伍","color":"yellow"}]

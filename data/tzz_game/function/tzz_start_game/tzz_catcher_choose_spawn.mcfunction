@@ -11,7 +11,7 @@ tag @a remove tzz_cancel_spawn_ok
 
 #非猎人尝试选择：提示失败并重置触发器
 execute as @a[scores={tzz_catcher_spawn_point=1..},team=!tzz_team_catcher] at @s run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"只有猎人可以选择出生位置。","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"只有猎人可以选择出生位置。","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=1..},team=!tzz_team_catcher] at @s run \
  playsound block.note_block.bass master @s ~ ~ ~ 1 1 1
@@ -77,7 +77,7 @@ execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 1 \
  if score tzz_spawn_A tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置A已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置A已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 1 \
@@ -140,7 +140,7 @@ execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 2 \
  if score tzz_spawn_B tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置B已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置B已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 2 \
@@ -203,7 +203,7 @@ execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 3 \
  if score tzz_spawn_C tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置C已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置C已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 3 \
@@ -266,7 +266,7 @@ execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 4 \
  if score tzz_spawn_D tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置D已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置D已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 4 \
@@ -329,7 +329,7 @@ execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 5 \
  if score tzz_spawn_E tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置E已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置E已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 5 \
@@ -392,7 +392,7 @@ execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 6 \
  if score tzz_spawn_F tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置F已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置F已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 6 \
@@ -455,7 +455,7 @@ execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 7 \
  if score tzz_spawn_G tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置G已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置G已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 7 \
@@ -518,7 +518,7 @@ execute as @a[scores={tzz_catcher_spawn_point=8},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=8},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 8 \
  if score tzz_spawn_H tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置H已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置H已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=8},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 8 \
@@ -581,11 +581,11 @@ execute as @a[scores={tzz_catcher_spawn_point=9},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=9},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 9 \
  if score tzz_spawn_I tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置I已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置I已被其他猎人选择！","color":"#ff0000"}]
 
-execute as @a[scores={tzz_catcher_spawn_point=9},team=tzz_team_catcher] at @s \
- unless score @s tzz_catcher_spawn_selected matches 9 \
- if score tzz_spawn_I tzz_catcher_spawn_lock matches 1 run \
+execute as @a[scores={tzz_catcher_spawn_point=8},team=tzz_team_catcher] at @s \
+ if score @s tzz_catcher_spawn_selected matches 8 run \
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"只有猎人可以选择出生位置。","color":"#ff0000"}]
  playsound block.note_block.bass master @s ~ ~ ~ 1 1 1
 
 execute as @a[scores={tzz_catcher_spawn_point=9},team=tzz_team_catcher] at @s \
@@ -658,7 +658,7 @@ execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 1 \
  if score tzz_spawn_A tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置A已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置A已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=1},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 1 \
@@ -734,7 +734,7 @@ execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 2 \
  if score tzz_spawn_B tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置B已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置B已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=2},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 2 \
@@ -816,7 +816,7 @@ execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 3 \
  if score tzz_spawn_C tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置C已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置C已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=3},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 3 \
@@ -898,7 +898,7 @@ execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 4 \
  if score tzz_spawn_D tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置D已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置D已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=4},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 4 \
@@ -980,7 +980,7 @@ execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 5 \
  if score tzz_spawn_E tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置E已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置E已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=5},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 5 \
@@ -1062,7 +1062,7 @@ execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 6 \
  if score tzz_spawn_F tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置F已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置F已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=6},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 6 \
@@ -1144,7 +1144,7 @@ execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
 execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 7 \
  if score tzz_spawn_G tzz_catcher_spawn_lock matches 1 run \
- tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置G已被其他猎人选择！","color":"red"}]
+ tellraw @s [{"text":"[全员逃走中] ","color":"gold"},{"text":"出生位置G已被其他猎人选择！","color":"#ff0000"}]
 
 execute as @a[scores={tzz_catcher_spawn_point=7},team=tzz_team_catcher] at @s \
  unless score @s tzz_catcher_spawn_selected matches 7 \

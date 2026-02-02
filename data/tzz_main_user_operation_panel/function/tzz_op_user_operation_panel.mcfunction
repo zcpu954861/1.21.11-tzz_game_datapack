@@ -8,7 +8,15 @@ execute as @a[scores={tzz_op_user_operation=1..}] at @s run \
  tellraw @s [{text:"-------=>管理员面板<=-------",color:"gold"}]
 
 execute as @a[scores={tzz_op_user_operation=1..}] at @s run \
- tellraw @s [{text:"========================",color:"dark_purple"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 execute as @a[scores={tzz_op_user_operation=1..}] at @s run \
  tellraw @s [{text:"• ",color:green},{text:"查看猎人玩家列表",color:"yellow",\
@@ -41,7 +49,15 @@ execute as @a[scores={tzz_op_user_operation=1..}] at @s run \
  hover_event:{action:"show_text","value":{"text":"点击开始游戏","color":green}}}]
 
 execute as @a[scores={tzz_op_user_operation=1..}] at @s run \
- tellraw @s [{text:"========================",color:"dark_purple"}]
+ tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
+ {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
+ {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
+ {"text":"=","color":"#f46f77"},{"text":"=","color":"#f46c6c"},{"text":"=","color":"#f56961"},\
+ {"text":"=","color":"#f56656"},{"text":"=","color":"#f5634b"},{"text":"=","color":"#f56040"},\
+ {"text":"=","color":"#f55d35"},{"text":"=","color":"#f55a2a"},{"text":"=","color":"#f5571f"},\
+ {"text":"=","color":"#f55724"},{"text":"=","color":"#f55729"},{"text":"=","color":"#f5572e"},\
+ {"text":"=","color":"#f5576c"},]
 
 #当玩家使用后，重置其tzz_op_user_operation记分板分数为0
 execute as @a[scores={tzz_op_user_operation=1..}] at @s run \

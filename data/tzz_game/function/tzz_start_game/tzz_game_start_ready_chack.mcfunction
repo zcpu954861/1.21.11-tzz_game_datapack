@@ -19,7 +19,7 @@ execute as @a[scores={tzz_game_start_ready_check=1..}] at @s run \
 
 execute as @a[scores={tzz_game_start_ready_check=1..}] at @s run \
  execute unless score player_numbers tzz_game_start_ready_cnt = Global tzz_player_number run \
- tellraw @a [{text:"[全员逃走中] ",color:gold},{text:"还有玩家未准备!",color:"red"}]
+ tellraw @a [{text:"[全员逃走中] ",color:gold},{text:"还有玩家未准备!","color":"#ff0000"}]
 
 #开始游戏
 execute if entity @a[scores={tzz_game_start_ready_check=1..}] run \
@@ -31,18 +31,6 @@ execute if entity @a[scores={tzz_game_start_ready_check=1..}] unless \
  score Global tzz_unassigned matches 1.. if \
  score Global tzz_game_start_ready_ok matches 1 run \
  scoreboard players set Global tzz_team_check_done 1
-
-execute as @a[scores={tzz_game_start_ready_check=1..}] at @s run \
- tellraw @a[tag=op] [{"text":"[全员逃走中][DEBUG] ready_cnt=","color":"dark_gray"},\
- {"score":{"name":"player_numbers","objective":"tzz_game_start_ready_cnt"}},\
- {"text":" / player_total=","color":"dark_gray"},\
- {"score":{"name":"Global","objective":"tzz_player_number"}},\
- {"text":"  unassigned=","color":"dark_gray"},\
- {"score":{"name":"Global","objective":"tzz_unassigned"}},\
- {"text":"  ready_ok=","color":"dark_gray"},\
- {"score":{"name":"Global","objective":"tzz_game_start_ready_ok"}},\
- {"text":"  team_check_done=","color":"dark_gray"},\
- {"score":{"name":"Global","objective":"tzz_team_check_done"}}]
 
 #重置开始游戏进程记分板分数
 execute as @a[scores={tzz_game_start_ready_check=1..}] at @s run \

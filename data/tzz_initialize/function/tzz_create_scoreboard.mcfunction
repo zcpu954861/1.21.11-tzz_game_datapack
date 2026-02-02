@@ -163,3 +163,4 @@ scoreboard players set tmp tzz_op_timer_math 0
 
 #清除玩家effect
 effect clear @a
+tag @a remove death
