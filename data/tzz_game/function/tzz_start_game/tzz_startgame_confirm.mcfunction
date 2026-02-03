@@ -130,7 +130,7 @@ execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
 
 execute as @a[scores={tzz_game_start_confirm=1..}] at @s run \
  tellraw @a[team=tzz_team_catcher] \
- [{text:"[任务一假猎人(绿色)]",color:"green",\
+ [{text:"[任务一假猎人(绿色)(任务三飞天)]",color:"green",\
  click_event:{action:"run_command",command:"/trigger tzz_catcher_spawn_point set 7"},\
  hover_event:{action:"show_text",value:{text:"选择出生位置G",color:green}}}]
 

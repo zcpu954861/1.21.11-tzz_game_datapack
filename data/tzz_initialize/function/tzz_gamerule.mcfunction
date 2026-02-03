@@ -4,3 +4,4 @@ gamerule show_death_messages false
 time set 6000
 gamerule advance_weather false
 weather clear
+gamerule fall_damage false

@@ -6,7 +6,8 @@ scoreboard players remove @a[scores={tzz_boundary_cd=1..}] tzz_boundary_cd 1
 
 # 仅在游戏激活时检测
 execute if score Global tzz_game_active matches 1.. as \
- @a[tag=!op] at @s unless entity @s[x=-566,dx=347,z=1968,dz=284] \
+ @a at @s unless entity @s[x=-566,dx=347,z=1968,dz=284] \
  unless entity @s[x=-566,dx=111,z=2252,dz=53] \
  unless entity @s[x=-455,dx=9,z=2252,dz=7] \
+ unless entity @s[x=-804,dx=238,z=2030,dz=177] \
  run function tzz_game:tzz_boundary/outside

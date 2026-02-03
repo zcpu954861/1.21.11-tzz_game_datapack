@@ -1,0 +1,1 @@
+tellraw @a [{text:"[全员逃走中]",color:"gold"},{text:" 复活人数已达四人,游戏继续",color:"#00ff00"}]

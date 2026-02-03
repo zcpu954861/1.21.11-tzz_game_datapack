@@ -17,6 +17,11 @@ tellraw @a [{"text":"["},\
  {"text":"吸引猎人"},\
  {"text":"抓捕","color":"#ff0000"}]
 
+setblock -538 65 2239 minecraft:redstone_block
+setblock -538 65 2239 minecraft:diamond_block
+setblock -255 65 1994 minecraft:redstone_block
+setblock -255 65 1994 minecraft:diamond_block
+
 # OP计时器：10分钟后触发定位抓捕
 data modify storage tzz_game:op_timer event set value "定位抓捕(未认证发光)"
 scoreboard players set Global tzz_op_timer_remaining 600

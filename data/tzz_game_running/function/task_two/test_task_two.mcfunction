@@ -1,6 +1,7 @@
 # 广播：通知所有玩家进入“全员逃走中”状态，并警告未认证玩家
 tellraw @a [{text:"[全员逃走中]",color:"gold"},{text:"没有认证的玩家将被定位抓捕!",color:"#ff0000"}]
 
+schedule function tzz_game_running:task_3/start_task_3 300s
 # 将 OP 计时器的事件字段设为占位字符串，表示当前无后续事件
 data modify storage tzz_game:op_timer event set value "无后续事件"
 

@@ -79,6 +79,10 @@ scoreboard players set Global tzz_team_check_done 0
 scoreboard objectives add tzz_game_active dummy
 scoreboard players set Global tzz_game_active 0
 
+# 当前任务编号（0=无，1/2/3/4...），用于控制任务专属检测/触发器
+scoreboard objectives add tzz_current_task dummy
+scoreboard players set Global tzz_current_task 0
+
 # 初始化“出界检测”冷却（避免每tick刷屏/重复tp）
 scoreboard objectives add tzz_boundary_cd dummy
 scoreboard players reset @a tzz_boundary_cd
@@ -174,3 +178,11 @@ scoreboard players set tmp tzz_op_timer_math 0
 #清除玩家effect
 effect clear @a
 tag @a remove death
+
+#任务三检测猎人是否封锁的计分板
+scoreboard objectives add tzz_task_3_catcher_lock dummy
+scoreboard players set Global tzz_task_3_catcher_lock 0
+
+#复活任务检测复活玩家数量的计分板 
+scoreboard objectives add tzz_revive_count dummy
+scoreboard players set Global tzz_revive_count 0

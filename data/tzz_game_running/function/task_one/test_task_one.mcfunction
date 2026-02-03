@@ -61,6 +61,10 @@ execute if score green tzz_task_one_catcher_chest_lock matches 1 \
  tellraw @a [{"text":"[全员逃走中]","color":"gold"},\
  {"text":" 所有猎人箱均已封锁,猎人不放出!","color":"#00ff00"}]
 
+gamemode spectator @a[scores={tzz_catcher_spawn_selected=7}]
+gamemode spectator @a[scores={tzz_catcher_spawn_selected=8}]
+gamemode spectator @a[scores={tzz_catcher_spawn_selected=9}]
+
 # OP计时器：5分钟后开始任务二
 data modify storage tzz_game:op_timer event set value "任务二开始"
 scoreboard players set Global tzz_op_timer_remaining 300

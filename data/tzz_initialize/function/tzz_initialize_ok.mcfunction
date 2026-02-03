@@ -9,7 +9,7 @@ execute as @a at @s run playsound minecraft:entity.experience_orb.pickup master 
 
 #显示欢迎信息
 tellraw @a [{"text":"欢迎使用全员逃走中数据包v2.4!","color":"yellow","italic":true}]
-tellraw @a [{"text":"作者:zhan_cpu","color":"yellow","italic":true}]
+tellraw @a [{"text":"作者: zhan_cpu 任务构思: Xing_Yu1127 ","color":"yellow","italic":true}]
 tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
  {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
  {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
