@@ -7,7 +7,7 @@ execute as @a[scores={tzz_text_expand=1..}] at @s run \
  tellraw @s [{text:"--------=>规则与指南<=--------",color:"#7FFFAA"}]
 
 execute as @a[scores={tzz_text_expand=1..}] at @s run \
- tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ tellraw @s [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
  {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
  {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
  {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
@@ -29,7 +29,7 @@ execute as @a[scores={tzz_text_expand=1..}] at @s run \
  "hover_event":{"action":"show_text","value":{"text":"点击查看游戏指南","color":green}}}]
 
 execute as @a[scores={tzz_text_expand=1..}] at @s run \
- tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ tellraw @s [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
  {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
  {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
  {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\

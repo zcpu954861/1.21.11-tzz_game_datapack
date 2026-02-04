@@ -178,6 +178,7 @@ scoreboard players set tmp tzz_op_timer_math 0
 #清除玩家effect
 effect clear @a
 tag @a remove death
+team leave @a
 
 #任务三检测猎人是否封锁的计分板
 scoreboard objectives add tzz_task_3_catcher_lock dummy
@@ -186,3 +187,23 @@ scoreboard players set Global tzz_task_3_catcher_lock 0
 #复活任务检测复活玩家数量的计分板 
 scoreboard objectives add tzz_revive_count dummy
 scoreboard players set Global tzz_revive_count 0
+
+#任务五检测三个装置被拉下次数的计分板
+scoreboard objectives add tzz_task_5_1_triggered_count dummy
+scoreboard objectives add tzz_task_5_2_triggered_count dummy
+scoreboard objectives add tzz_task_5_3_triggered_count dummy
+scoreboard players set Global tzz_task_5_1_triggered_count 0
+scoreboard players set Global tzz_task_5_2_triggered_count 0
+scoreboard players set Global tzz_task_5_3_triggered_count 0
+tag @a remove task_5_triggered_1_1
+tag @a remove task_5_triggered_1_2
+tag @a remove task_5_triggered_1_3
+tag @a remove task_5_triggered_1
+tag @a remove task_5_triggered_2_1
+tag @a remove task_5_triggered_2_2
+tag @a remove task_5_triggered_2_3
+tag @a remove task_5_triggered_2
+tag @a remove task_5_triggered_3_1
+tag @a remove task_5_triggered_3_2
+tag @a remove task_5_triggered_3_3
+tag @a remove task_5_triggered_3

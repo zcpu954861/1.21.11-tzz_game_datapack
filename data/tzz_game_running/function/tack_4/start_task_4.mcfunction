@@ -16,6 +16,22 @@ tellraw @a [{"text":"["},\
 
 scoreboard players set Global tzz_current_task 4
 
+setblock -749 67 2061 minecraft:redstone_block
+setblock -749 67 2061 minecraft:diamond_block
+setblock -802 67 2131 minecraft:redstone_block
+setblock -802 67 2131 minecraft:diamond_block
+setblock -738 64 2196 minecraft:redstone_block
+setblock -738 64 2196 minecraft:diamond_block
+setblock -792 106 2183 minecraft:redstone_block
+setblock -792 106 2183 minecraft:diamond_block
+
+tag @a[team=tzz_team_catcher,gamemode=adventure] add task_4_catcher_adventure
+tag @a[team=tzz_team_catcher,gamemode=creative] add task_4_catcher_creative
+gamemode spectator @a[tag=!death,team=tzz_team_runner]
+gamemode spectator @a[team=tzz_team_catcher]
+gamemode adventure @a[tag=death,team=tzz_team_runner]
+tp @a -660.5 70.00 2097.5
+
 # Clone source block (-579 66 2026) to multiple targets, 三个为一组
 # 组 1
 clone -579 66 2026 -579 66 2026 -587 69 2044 replace

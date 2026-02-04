@@ -6,7 +6,7 @@ execute as @a[scores={tzz_show_game_rule=1..}] at @s run \
  tellraw @s [{text:"--------=>游戏规则<=--------",color:"#7FFFAA"}]
 
 execute as @a[scores={tzz_show_game_rule=1..}] at @s run \
- tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ tellraw @s [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
  {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
  {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
  {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\
@@ -24,7 +24,7 @@ execute as @a[scores={tzz_show_game_rule=1..}] at @s run \
  tellraw @s [{text:"• ",color:"yellow"},{text:"严禁在游玩时更改队伍，管理员会收到提示",color:"#B0C4DE"}]
 
 execute as @a[scores={tzz_show_game_rule=1..}] at @s run \
- tellraw @a [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
+ tellraw @s [{"text":"=","color":"#f093fb"},{"text":"=","color":"#f090f0"},{"text":"=","color":"#f18de5"},\
  {"text":"=","color":"#f18ada"},{"text":"=","color":"#f187cf"},{"text":"=","color":"#f284c4"},\
  {"text":"=","color":"#f281b9"},{"text":"=","color":"#f27eae"},{"text":"=","color":"#f37ba3"},\
  {"text":"=","color":"#f37898"},{"text":"=","color":"#f3758d"},{"text":"=","color":"#f47282"},\

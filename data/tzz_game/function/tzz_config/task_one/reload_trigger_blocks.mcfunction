@@ -6,3 +6,17 @@ function tzz_game:tzz_macros/setblock {x:-255,y:67,z:1994,block:"minecraft:redst
 function tzz_game:tzz_macros/setblock {x:-255,y:67,z:1994,block:"minecraft:diamond_block"}
 function tzz_game:tzz_macros/setblock {x:-372,y:73,z:2070,block:"minecraft:redstone_block"}
 function tzz_game:tzz_macros/setblock {x:-372,y:73,z:2070,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-749,y:70,z:2061,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-749,y:70,z:2061,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-802,y:70,z:2131,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-802,y:70,z:2131,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-738,y:67,z:2196,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-738,y:67,z:2196,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-792,y:109,z:2183,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-792,y:109,z:2183,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-439,y:72,z:2244,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-439,y:72,z:2244,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-266,y:71,z:2145,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-266,y:71,z:2145,block:"minecraft:diamond_block"}
+function tzz_game:tzz_macros/setblock {x:-536,y:67,z:2007,block:"minecraft:redstone_block"}
+function tzz_game:tzz_macros/setblock {x:-536,y:67,z:2007,block:"minecraft:diamond_block"}
