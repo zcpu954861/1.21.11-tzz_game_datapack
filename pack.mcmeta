@@ -1,6 +1,10 @@
 {
-    "pack": {
-        "pack_format": 94,
-        "description": "tzz_minigame main data pack by zcpu"
-    }
+  "pack": {
+    "description": "tzz_game by zcpu",
+    "min_format": [
+      94,
+      1
+    ],
+    "max_format": 94
+  }
 }
