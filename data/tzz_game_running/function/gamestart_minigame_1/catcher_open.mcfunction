@@ -3,7 +3,7 @@ title @a title [{"text":""}]
 title @a subtitle [{"text":"猎人已放出!","color":"#8b0000","bold":true}]
 function tzz_game:tzz_config/gamestart/arena_fill_air
 function tzz_game:tzz_config/gamestart/catcher_fx
-
+function tzz_game:tzz_game_energy/tzz_game_energy_load
 # OP计时器：5分钟后开始任务一
 data modify storage tzz_game:op_timer event set value "任务一开始"
 scoreboard players set Global tzz_op_timer_remaining 300

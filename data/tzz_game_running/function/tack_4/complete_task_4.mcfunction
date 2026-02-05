@@ -8,3 +8,7 @@ gamemode adventure @a[team=tzz_team_catcher,tag=task_4_catcher_adventure]
 gamemode creative @a[team=tzz_team_catcher,tag=task_4_catcher_creative]
 
 schedule function tzz_game_running:task_5/start_task_5 300s
+
+# OP计时器：5分钟后开始奖励装置任务
+data modify storage tzz_game:op_timer event set value "任务四开始(奖励装置)"
+scoreboard players set Global tzz_op_timer_remaining 300

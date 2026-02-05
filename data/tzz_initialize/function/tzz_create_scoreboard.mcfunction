@@ -36,6 +36,17 @@ scoreboard players enable @a tzz_death_spectator_switch
 #初始化用于统计剩余玩家的计分板
 scoreboard objectives add tzz_player_count dummy
 
+# game_end 结算用的临时计分板（假玩家）初始化，避免下一局/重载残留
+scoreboard players reset runner_total tzz_player_count 
+scoreboard players reset runner_alive tzz_player_count 
+scoreboard players reset catcher_total tzz_player_count 
+scoreboard players reset cert_total tzz_player_count 
+scoreboard players reset uncert tzz_player_count 
+
+scoreboard players reset Total tzz_run_energy 
+scoreboard players reset maxEnergy tzz_run_energy 
+scoreboard players reset TotalKill tzz_catcher_kill_count 
+
 #初始化用于开始游戏确认的计分板
 scoreboard objectives add tzz_game_start_confirm trigger
 scoreboard players enable @a tzz_game_start_confirm
@@ -207,3 +218,18 @@ tag @a remove task_5_triggered_3_1
 tag @a remove task_5_triggered_3_2
 tag @a remove task_5_triggered_3_3
 tag @a remove task_5_triggered_3
+
+#任务六检测运送物品的计分板
+scoreboard objectives add tzz_task_6_1_triggered_count dummy
+scoreboard players set Global tzz_task_6_1_triggered_count 0
+scoreboard objectives add tzz_task_6_2_triggered_count dummy
+scoreboard players set Global tzz_task_6_2_triggered_count 0
+tag @a remove task_6_triggered_1_1
+tag @a remove task_6_triggered_1_2
+tag @a remove task_6_triggered_1
+tag @a remove task_6_triggered_2_1
+tag @a remove task_6_triggered_2_2
+tag @a remove task_6_triggered_2
+
+scoreboard players reset maxEnergy tzz_run_energy
+scoreboard players reset Total tzz_run_energy

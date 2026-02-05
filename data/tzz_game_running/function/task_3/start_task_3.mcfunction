@@ -28,4 +28,8 @@ gamemode creative @a[scores={tzz_catcher_spawn_selected=7}]
 setblock -372 71 2070 minecraft:redstone_block
 setblock -372 71 2070 minecraft:diamond_block
 
+# OP计时器：10分钟后进行任务三阶段判定
+data modify storage tzz_game:op_timer event set value "任务三判定(通报猎人封锁)"
+scoreboard players set Global tzz_op_timer_remaining 600
+
 schedule function tzz_game_running:task_3/test_task_3 600s

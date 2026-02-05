@@ -20,4 +20,8 @@ setblock -266 69 2145 minecraft:diamond_block
 setblock -536 65 2007 minecraft:redstone_block
 setblock -536 65 2007 minecraft:diamond_block
 
+# OP计时器：6分钟后奖励装置失效
+data modify storage tzz_game:op_timer event set value "奖励装置失效"
+scoreboard players set Global tzz_op_timer_remaining 360
+
 schedule function tzz_game_running:task_5/test_task_5 360s

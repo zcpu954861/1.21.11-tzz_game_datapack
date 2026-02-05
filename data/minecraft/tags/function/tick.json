@@ -15,6 +15,7 @@
         "tzz_game:tzz_start_game/tzz_game_start_chack_team",
         "tzz_game:tzz_start_game/tzz_game_start_ready_chack",
         "tzz_game_running:op_timer/tick",
-        "tzz_game_running:tack_4/detect_use_fire"
+        "tzz_game_running:tack_4/detect_use_fire",
+        "tzz_game_running:task_6/test_chest_item"
     ]
 }
