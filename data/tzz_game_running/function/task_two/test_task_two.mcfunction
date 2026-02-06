@@ -8,4 +8,4 @@ data modify storage tzz_game:op_timer event set value "任务三开始"
 scoreboard players set Global tzz_op_timer_remaining 300
 
 # 给所有未通过认证的玩家施加永久发光效果，便于定位抓捕（隐藏粒子）
-effect give @a[tag=!certification_male_passed,tag=!certification_female_passed] minecraft:glowing infinite 1 true
+effect give @a[tag=!certification_male_passed,tag=!certification_female_passed,tag=!op] minecraft:glowing infinite 1 true

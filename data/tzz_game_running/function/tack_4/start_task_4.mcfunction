@@ -15,6 +15,8 @@ tellraw @a [{"text":"["},\
  {"text":"复活任务不计算时间!"}]
 
 scoreboard players set Global tzz_current_task 4
+scoreboard players set Global tzz_revive_count 0
+scoreboard players set Global tzz_op_timer_mode 1
 
 setblock -749 67 2061 minecraft:redstone_block
 setblock -749 67 2061 minecraft:diamond_block

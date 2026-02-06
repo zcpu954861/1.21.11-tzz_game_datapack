@@ -179,8 +179,10 @@ tag @a remove certification_male_passed
 scoreboard objectives add tzz_op_timer_remaining dummy
 scoreboard objectives add tzz_op_timer_tick dummy
 scoreboard objectives add tzz_op_timer_math dummy
+scoreboard objectives add tzz_op_timer_mode dummy
 scoreboard players set Global tzz_op_timer_remaining 0
 scoreboard players set Global tzz_op_timer_tick 0
+scoreboard players set Global tzz_op_timer_mode 0
 scoreboard players set const_60 tzz_op_timer_math 60
 scoreboard players set min tzz_op_timer_math 0
 scoreboard players set sec tzz_op_timer_math 0

@@ -10,6 +10,7 @@ scoreboard players set Global tzz_team_check_done 0
 data modify storage tzz_game:op_timer event set value "游戏结束!"
 scoreboard players set Global tzz_op_timer_remaining 0
 scoreboard players set Global tzz_op_timer_tick 0
+scoreboard players set Global tzz_op_timer_mode 0
 
 # --------------------
 # 终止全部定时任务（schedule）

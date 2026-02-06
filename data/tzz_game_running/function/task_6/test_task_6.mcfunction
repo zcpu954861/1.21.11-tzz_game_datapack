@@ -1,4 +1,4 @@
-scoreboard players remove @a[tag=!task_6_triggered_1,tag=!task_6_triggered_2] tzz_run_energy 10000
+scoreboard players remove @a[tag=!task_6_triggered_1,tag=!task_6_triggered_2,tag=!op] tzz_run_energy 10000
 
 tellraw @a [{text:"[全员逃走中]",color:"gold"},\
 {text:"没有将物品送到的逃走队员将被扣除逃走能量!",color:"#ff0000"}]
